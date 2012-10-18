@@ -31,14 +31,20 @@
 
 using namespace std;
 
-//Define
+//{Defines
 #define NAME(n) #n
 #define pr(x) db((x), (#x))
-#define prv(v) dbv((v), (#v), (n))
+#define prv(v,n) dbv((v), (#v), (n))
 #define prw(v) dbw((v), (#v))
+#define ALL(c) (c).begin(), (c).end() 
+#define SORT(c) sort(ALL(c)) 
+#define X first 
+#define Y second 
+#define pb push_back 
 
 //Constants
 const int N = 1<<10;
+const int INF = 0x3f3f3f3f;
 
 //Structs
 
@@ -81,3 +87,4 @@ int main(){
 	
 	return 0;
 }
+
