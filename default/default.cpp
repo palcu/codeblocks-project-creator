@@ -1,9 +1,9 @@
 /***************************************************
- * Author: Alexandru Palcuie
- * Country: Romania
- * Email: alex [dot] palcuie [at] gmail [dot] com
- * Website: http://palcu.blogspot.com/
- * Year: 2012
+ * Alex Palcuie
+ * Romania
+ * alex [dot] palcuie [at] gmail [dot] com
+ * http://palcu.blogspot.com/
+ * 2013
 ****************************************************/
 
 #include <vector>
@@ -15,13 +15,8 @@
 #include <queue>
 #include <bitset>
 #include <algorithm>
-#include <functional>
-#include <fstream>
-#include <numeric>
 #include <utility>
-#include <sstream>
 #include <iostream>
-#include <iomanip>
 #include <cstdio>
 #include <cmath>
 #include <cstdlib>
@@ -31,18 +26,16 @@
 
 using namespace std;
 
-//{Defines
+// Defines
 #define NAME(n) #n
 #define pr(x) db((x), (#x))
 #define prv(v,n) dbv((v), (#v), (n))
 #define prw(v) dbw((v), (#v))
-#define ALL(c) (c).begin(), (c).end() 
-#define SORT(c) sort(ALL(c)) 
 #define X first 
 #define Y second 
 #define pb push_back 
 
-//{Helpers
+// Helpers
 template <typename T>
 inline void db(const T x, const char * name){
 	cerr << name << " = " << x << '\n';
@@ -65,18 +58,17 @@ void dbw(const std::vector<T>& t, const char * name){
 		std::cerr << t[i] << ' ';
 	cerr << '\n';
 }
-//}
 
-//Constants
+// Constants
 const int N = 1<<10;
 const int INF = 0x3f3f3f3f;
 
-//Global Vars
+// Globals
 int n, v[N];
 
-//Structs
+// Structs
 
-//Solve Functions
+// Functions
 int main(){
 	#ifndef ONLINE_JUDGE
 	freopen("default.in","r",stdin);
@@ -87,4 +79,3 @@ int main(){
 	
 	return 0;
 }
-
