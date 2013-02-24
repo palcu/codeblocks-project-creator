@@ -42,15 +42,6 @@ using namespace std;
 #define Y second 
 #define pb push_back 
 
-//Constants
-const int N = 1<<10;
-const int INF = 0x3f3f3f3f;
-
-//Structs
-
-//Global Vars
-int n, v[N];
-
 //{Helpers
 template <typename T>
 inline void db(const T x, const char * name){
@@ -75,6 +66,15 @@ void dbw(const std::vector<T>& t, const char * name){
 	cerr << '\n';
 }
 //}
+
+//Constants
+const int N = 1<<10;
+const int INF = 0x3f3f3f3f;
+
+//Global Vars
+int n, v[N];
+
+//Structs
 
 //Solve Functions
 int main(){
