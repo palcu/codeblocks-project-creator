@@ -1,9 +1,8 @@
 /***************************************************
  * Alex Palcuie
- * Romania
+ * Romania - 2013
  * alex [dot] palcuie [at] gmail [dot] com
  * http://palcu.blogspot.com/
- * 2013
 ****************************************************/
 
 #include <vector>
@@ -59,6 +58,8 @@ void dbw(const std::vector<T>& t, const char * name){
 	cerr << '\n';
 }
 
+// Structs
+
 // Constants
 const int N = 1<<10;
 const int INF = 0x3f3f3f3f;
@@ -66,14 +67,14 @@ const int INF = 0x3f3f3f3f;
 // Globals
 int n, v[N];
 
-// Structs
-
 // Functions
 int main(){
 	#ifndef ONLINE_JUDGE
 	freopen("default.in","r",stdin);
 	//freopen("default.out","w",stdout);
 	#endif
+	
+	int i;
 	
 	
 	
