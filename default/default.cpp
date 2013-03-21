@@ -30,13 +30,14 @@ using namespace std;
 #define pr(x) db((x), (#x))
 #define prv(v,n) dbv((v), (#v), (n))
 #define prw(v) dbw((v), (#v))
-#define X first 
-#define Y second 
-#define pb push_back 
+#define F first 
+#define S second 
+#define pb push_back
+#define sz size()
+#define mp make_pair
 
 // Helpers
-template <typename T>
-inline void db(const T x, const char * name){
+template <typename T> inline void db(const T x, const char * name){
 	cerr << name << " = " << x << '\n';
 }
 template <typename T> inline void dbv(const T * v, const char * name, int n){
@@ -48,9 +49,7 @@ template <typename T> inline void dbv(const T * v, const char * name, int n){
 template <typename T> inline void dbs(T x){
 	cerr << x << ' ';
 }
-
-template<typename T>
-void dbw(const std::vector<T>& t, const char * name){
+template<typename T> void dbw(const std::vector<T>& t, const char * name){
 	fprintf(stderr, "=== %s ===\n", name);
 	unsigned n = t.size();
 	for(typename std::vector<T>::size_type i=0; i<n; ++i)
