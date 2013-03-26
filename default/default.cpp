@@ -22,6 +22,7 @@
 #include <ctime>
 #include <iterator>
 #include <cstring>
+#include <climits>
 
 using namespace std;
 
@@ -35,6 +36,8 @@ using namespace std;
 #define pb push_back
 #define sz size()
 #define mp make_pair
+typedef unsigned long long ull;
+typedef pair<int,int> pii;
 
 // Helpers
 template <typename T> inline void db(const T x, const char * name){
