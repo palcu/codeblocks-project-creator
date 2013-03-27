@@ -68,8 +68,8 @@ const int INF = 0x3f3f3f3f;
 int main(){
 	ios_base::sync_with_stdio(false);
 	#ifndef ONLINE_JUDGE
-	ifstream fin("jocul.in");
-	ofstream fout("jocul.out");
+	ifstream fin("default.in");
+	ofstream fout("default.out");
 	#endif
 	
 	
