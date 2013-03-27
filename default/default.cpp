@@ -23,12 +23,13 @@
 #include <iterator>
 #include <cstring>
 #include <climits>
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
 // Defines
 #define NAME(n) #n
-#define pr(x) db((x), (#x))
 #define prv(v,n) dbv((v), (#v), (n))
 #define prw(v) dbw((v), (#v))
 #define F first 
@@ -38,19 +39,14 @@ using namespace std;
 #define mp make_pair
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
+typedef vector<int> vi;
 
 // Helpers
-template <typename T> inline void db(const T x, const char * name){
-	cerr << name << " = " << x << '\n';
-}
 template <typename T> inline void dbv(const T * v, const char * name, int n){
 	fprintf(stderr, "=== %s ===\n", name);
 	for(int i=0; i<n; i++)
 		cerr << v[i] << " ";
 	cerr << '\n';
-}
-template <typename T> inline void dbs(T x){
-	cerr << x << ' ';
 }
 template<typename T> void dbw(const std::vector<T>& t, const char * name){
 	fprintf(stderr, "=== %s ===\n", name);
@@ -67,18 +63,16 @@ const int N = 1<<10;
 const int INF = 0x3f3f3f3f;
 
 // Globals
-int n, v[N];
 
 // Functions
 int main(){
+	ios_base::sync_with_stdio(false);
 	#ifndef ONLINE_JUDGE
-	freopen("default.in","r",stdin);
-	//freopen("default.out","w",stdout);
+	ifstream fin("jocul.in");
+	ofstream fout("jocul.out");
 	#endif
 	
-	int i;
 	
 	
-	
-	return 0;
+	fin.close(); fout.close(); return 0;
 }
