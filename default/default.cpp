@@ -23,6 +23,7 @@
 #include <iterator>
 #include <cstring>
 #include <climits>
+#include <limits>
 #include <fstream>
 #include <sstream>
 
