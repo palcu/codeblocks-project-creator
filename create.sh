@@ -4,9 +4,9 @@
 default_template_location='/home/alex/.default_cpp/'
 new_project_location='/home/alex/Desktop/'
 
-if [ -z "$1" ]; then
+if [ -z $1 ]; then
 	echo 'No name for project'
-	return
+	exit 0
 fi
 
 if [ ! -d $default_template_location ]; then
